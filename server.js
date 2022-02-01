@@ -40,7 +40,7 @@ app.set('view engine', 'handlebars');
 
 app.use(routes);
 
-// turn on connection to db and server
+// turn on connection to db and server **** Flipping the force to true and starting the server will rewrite the database (losing anything you put in), be sure to change it back to false once you're done (otherwise it will keep dumping the test data you put into the system)
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening on: ' + PORT));
 });

@@ -144,6 +144,14 @@
   .edit-post-form {
     margin-bottom: 5%;
   }
+
+  .center {
+    text-align-last: center;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
   
   footer {
     border-top: 1px solid #ccc;
